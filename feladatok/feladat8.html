@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Scriptfügvények-Feladat8</title>
+    <script>
+        var szoveg=prompt("Írj be egy szöveget!");
+        var titkositas="";
+
+        for (let index = 0; index < szoveg.length; index++) {
+            titkositas += szoveg.charCodeAt(index) + " ";   
+        } //// Hozzáfűzzük a karakter Unicode(ASCII) kódját a titkosított szöveghez
+    // közöttük szóközt használva a könnyebb olvashatóságért. A charCodeAt()= String, azaz, karakter ASCII értéke.
+
+        alert("A titkosított szöveg:" +titkositas.trim());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

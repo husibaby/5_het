@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Scriptfügvények-Feladat1</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", init);
+
+        function init(){
+            const mezo = document.getElementById("szoveg")
+            const kimenet = document.getElementById("kimenet");
+            mezo.addEventListener("change", () =>{
+                const szoveg = document.getElementById("szoveg").value;
+                kimenet.innerHTML="A Szöveg hossza:" + szoveg.length;
+            })
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Adj meg egy szöveget!" id="szoveg">
+    <p id="kimenet"></p>
+</body>
+</html>

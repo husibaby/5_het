@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Scriptfügvények-Feladat6</title>
+    <script>
+        var szoveg;
+
+    do{szoveg=prompt("Írj be egy legalább 30 karaktert tartalmazó sszöveget!");
+    }while (szoveg.length<30);
+
+        var szo=prompt("Írja be a keresett szót!")
+
+        if (szoveg.includes(szo)) {
+            alert("Szerepel az adott szó a keresett szövegben!");
+        }else{
+            alert("A keresett szó nem szerepel a szövegben!");
+        }
+        //includes megvizsgálja, hogy szerepel-e a keresési feltétel a szövegben
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
